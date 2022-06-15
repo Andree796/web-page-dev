@@ -1,0 +1,141 @@
+body, li, h1, img, ul, p, section, div, article, h2, a, input, span{
+  padding: 0;
+  margin: 0;
+  outline: none;  
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* CABECALHO */
+.nav-cabecalho ul{
+  list-style: none;
+}
+
+.cabecalho{
+  background-color: #1F4690;
+  padding: 12px;
+}
+
+.container-cabecalho{
+  display: grid;
+  grid-template-columns: 250px 85px 1fr 85px 250px
+}
+
+.nav-cabecalho{
+  grid-column: 2 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titulo-cabecalho{
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.lista-cabecalho{
+  display: flex;
+}
+
+.lista-cabecalho a{
+  margin-right: 10px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.button{
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+a:hover, .titulo-cabecalho:hover{
+  color: #FFA500;
+}
+
+.button:active, .button:hover{
+  color: #FFA500;
+  border: 1px solid #FFA500;
+}
+
+.aba-pesquisa{
+  border: solid 1px white;
+  display: flex;
+  padding: 2px;
+}
+
+.barra-pesquisa{
+  padding-right: 4px;
+  padding-left: 4px;
+  border: none;
+}
+
+.lupa-pesquisa{
+  color: black;
+  cursor: pointer;
+  background-color: #FFA500;
+}
+
+/* MAIN */
+.container-wallpaper{
+  background-color: #1F4690;
+  grid-template-columns: 250px 85px 1fr 85px 250px;
+  display: grid;
+}
+
+.wallpaper{
+  grid-column: 2 / 5;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.textos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titulo-wallpaper{
+  /* width: 545px; */
+  font-weight: 700;
+  color: white;
+  font-size: 35px;
+  margin-bottom: 7px;
+}
+
+.texto-wallpaper{
+  color: white;
+  margin-bottom: 14px;
+}
+
+.botoes{
+  display: flex;
+  column-gap: 15px;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+
+.botao-fale{
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.botao-fale:hover{
+  border: 1px solid #FFA500;
+}
+
+.smartphone{
+  width: 160px;
+}
