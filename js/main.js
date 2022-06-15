@@ -2,7 +2,7 @@ const btnThemeEscuro = document.querySelector('#btn1');
 //const btnThemeClaro = document.querySelector('#btn2');
 const cabecalho = document.querySelector('#cabecalho');
 const containerWallpaper = document.querySelector('#containerWallpaper');
-const conteudoPrimario = document.querySelector('#conteudoPrimario')
+const conteudoPrimario = document.querySelector('#conteudoPrimario');
 
 
 btn1.addEventListener('click', () => {
@@ -16,7 +16,7 @@ btn1.addEventListener('click', () => {
     conteudoPrimario.classList.toggle('conteudo-principal-primario-dark');
     conteudoPrimario.classList.toggle('conteudo-principal-primario');
 
-    if(cabecalho.classList.contains('cabecalho-dark')){
+    if(cabecalho.classList.contains('cabecalho-dark') || containerWallpaper.classList.contains('container-dark') ||conteudoPrimario.classList.contains('conteudo-principal-primario-dark')){
       btnThemeEscuro.innerHTML='Modo claro';
     }else{
       btnThemeEscuro.innerHTML='Modo escuro';
