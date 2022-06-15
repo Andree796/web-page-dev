@@ -8,6 +8,17 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+.cabecalho-dark{
+  background-color: #0c0c0c;
+  padding: 12px;
+}
+
+.container-dark{
+  background-color: #0c0c0c;
+  grid-template-columns: 250px 85px 1fr 85px 250px;
+  display: grid;
+  border-bottom: 50px #FFE5B4 solid;
+}
 
 /* CABECALHO */
 .nav-cabecalho ul{
@@ -21,7 +32,7 @@ body{
 
 .container-cabecalho{
   display: grid;
-  grid-template-columns: 250px 85px 1fr 85px 250px
+  grid-template-columns: 238px 85px 1fr 85px 238px
 }
 
 .nav-cabecalho{
@@ -32,7 +43,7 @@ body{
 }
 
 .titulo-cabecalho{
-  color: white;
+  color: #FFE5B4;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
@@ -42,16 +53,25 @@ body{
   display: flex;
 }
 
-.lista-cabecalho a{
+.lista-cabecalho .aba-clicavel{
   margin-right: 10px;
-  color: white;
+  color: #FFE5B4;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.aba-clicavel-2 {
+  color:black;
+  margin-right: 10px;
   font-weight: 400;
   text-decoration: none;
   font-size: 12px;
 }
 
 .button{
-  border: 1px solid white;
+  border: 1px solid #FFE5B4;
+  background-color: #FFE5B4;
   border-radius: 10px;
   padding: 8px;
 }
@@ -66,9 +86,13 @@ a:hover, .titulo-cabecalho:hover{
 }
 
 .aba-pesquisa{
-  border: solid 1px white;
+  border: solid 1px #FFE5B4 ;
   display: flex;
   padding: 2px;
+}
+
+.aba-pesquisa input::placeholder{
+  font-size: 12px;
 }
 
 .barra-pesquisa{
@@ -80,7 +104,7 @@ a:hover, .titulo-cabecalho:hover{
 .lupa-pesquisa{
   color: black;
   cursor: pointer;
-  background-color: #FFA500;
+  background-color: #FFE5B4;
 }
 
 /* MAIN */
@@ -88,6 +112,7 @@ a:hover, .titulo-cabecalho:hover{
   background-color: #1F4690;
   grid-template-columns: 250px 85px 1fr 85px 250px;
   display: grid;
+  border-bottom: 50px #FFE5B4 solid;
 }
 
 .wallpaper{
@@ -95,6 +120,7 @@ a:hover, .titulo-cabecalho:hover{
   display: flex;
   justify-content: space-between;
   margin-top: 2em;
+  
 }
 
 .textos{
@@ -106,7 +132,7 @@ a:hover, .titulo-cabecalho:hover{
 .titulo-wallpaper{
   /* width: 545px; */
   font-weight: 700;
-  color: white;
+  color: #FFE5B4;
   font-size: 35px;
   margin-bottom: 7px;
 }
@@ -123,12 +149,12 @@ a:hover, .titulo-cabecalho:hover{
 
 .link{
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .botao-fale{
-  border: 1px solid white;
   border-radius: 5px;
+  background-color: #FFE5B4;
   padding: 10px;
 }
 
@@ -136,6 +162,74 @@ a:hover, .titulo-cabecalho:hover{
   border: 1px solid #FFA500;
 }
 
+.borda{
+  background-color: #FFA500;
+  height: 150px;
+}
+
 .smartphone{
-  width: 160px;
+  width: 200px;
+  position: relative;
+  top: 40px;
+}
+
+.conteudo-principal-primario{
+  grid-template-columns: 250px 85px 1fr 85px 250px;
+  display: grid;
+  text-align: center;
+  background-color: #ffffff;
+  /* margin-top: 3em; */
+}
+
+.conteudo-principal-primario-dark{
+  background-color: #FFE5B4;;
+  color: black;
+  grid-template-columns: 250px 85px 1fr 85px 250px;
+  display: grid;
+  text-align: center;
+
+}
+
+.textos-principais-primarios{
+  grid-column: 3 / 4;
+  margin-top: 3em;
+}
+
+.titulo-principal{
+  color: black;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.textos{
+  font-size: 15px;
+  margin-top: 15px;
+  text-align: none;
+  color: #000000;
+}
+
+.tres-imagens{
+  display: flex;
+  margin-top: 40px;
+  column-gap: 15px;
+}
+
+.imagem-joinha{
+  margin-bottom: 12px;
+}
+
+.imagem-joinha, .imagem-monitor, .imagem-engrenagens{
+  width: 70px;
+}
+
+.titulo{
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: 400;
+}
+
+.paragrafo-imagem{
+  font-size: 12px;
 }
