@@ -1,12 +1,19 @@
 const btnThemeEscuro = document.querySelector('#btn1');
-//const btnThemeClaro = document.querySelector('#btn2');
-const cabecalho = document.querySelector('#cabecalho');
-const containerWallpaper = document.querySelector('#containerWallpaper');
-const conteudoPrimario = document.querySelector('#conteudoPrimario');
-
-
 btn1.addEventListener('click', () => {
+  //const btnThemeClaro = document.querySelector('#btn2');
+  const cabecalho = document.querySelector('#cabecalho');
+  const containerWallpaper = document.querySelector('#containerWallpaper');
+  const conteudoPrimario = document.querySelector('#conteudoPrimario');
+  const conteudoSecundario = document.querySelector('#containerSecundario')
+  const corpo = document.querySelector('#corpoDark');
+  const barraTexto = document.querySelector('#barraTexto');
+  const containerFinal = document.querySelector('#containerFinal');
+
   function darkMode(){
+
+    corpo.classList.toggle('corpoDark');
+    corpo.classList.toggle('corpo');
+
     cabecalho.classList.toggle('cabecalho-dark');//adiciona o que nao tem e vice e versa
     cabecalho.classList.toggle('cabecalho');//remove o que ja tem e vice e versa
 
@@ -16,7 +23,17 @@ btn1.addEventListener('click', () => {
     conteudoPrimario.classList.toggle('conteudo-principal-primario-dark');
     conteudoPrimario.classList.toggle('conteudo-principal-primario');
 
-    if(cabecalho.classList.contains('cabecalho-dark') || containerWallpaper.classList.contains('container-dark') ||conteudoPrimario.classList.contains('conteudo-principal-primario-dark')){
+    conteudoSecundario.classList.toggle('conteudo-principal-secundario-dark');
+    conteudoSecundario.classList.toggle('conteudo-principal-secundario');
+
+    barraTexto.classList.toggle('barra-texto-escuro');
+    barraTexto.classList.toggle('barra-texto');
+
+    containerFinal.classList.toggle('conteudo-principal-final-escuro');
+    containerFinal.classList.toggle('conteudo-principal-final');
+
+
+    if(corpo.classList.contains('corpoDark') || cabecalho.classList.contains('cabecalho-dark') || containerWallpaper.classList.contains('container-dark') ||conteudoPrimario.classList.contains('conteudo-principal-primario-dark' || conteudoSecundario.contains('conteudo-principal-secundario-dark') || barraTexto.classList.contains('barra-texto-escuro') || containerFinal.classList.contains('conteudo-principal-final-escuro'))){
       btnThemeEscuro.innerHTML='Modo claro';
     }else{
       btnThemeEscuro.innerHTML='Modo escuro';
@@ -26,11 +43,22 @@ btn1.addEventListener('click', () => {
 });
 
 
+function iniciarModal(modalID){
+  const modal = document.querySelector('#modal-sobreNos');
+  if(modal){
+    modal.classList.add('mostrar');
+    modal.addEventListener('click', (evento) => {
+      if(evento.target.id === modalID || evento.target.className == 'fechar'){
+        modal.classList.remove('mostrar');
+      }
+    });
+  }
+}
 
-
-
-
-
+const sobreNosBtn = document.querySelector('#sobreNosBtn');
+sobreNosBtn.addEventListener('click', () => {
+  iniciarModal('modal-sobreNos');
+})
 
 
 
