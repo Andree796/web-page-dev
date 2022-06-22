@@ -1,0 +1,26 @@
+label, section{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+.container-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-box{
+  border: solid 4px #FFE5B4;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.boxMsg{
+  height: 120px;
+}

@@ -1,3 +1,15 @@
+function iniciarModal(modalID){
+  const modal = document.querySelector('#modal-sobreNos');
+  if(modal){
+    modal.classList.add('mostrar');
+    modal.addEventListener('click', (evento) => {
+      if(evento.target.id === modalID || evento.target.className == 'fechar'){
+        modal.classList.remove('mostrar');
+      }
+    });
+  }
+}
+
 const btnThemeEscuro = document.querySelector('#btn1');
 btn1.addEventListener('click', () => {
   //const btnThemeClaro = document.querySelector('#btn2');
@@ -42,37 +54,18 @@ btn1.addEventListener('click', () => {
   darkMode();
 });
 
-
-function iniciarModal(modalID){
-  const modal = document.querySelector('#modal-sobreNos');
-  if(modal){
-    modal.classList.add('mostrar');
-    modal.addEventListener('click', (evento) => {
-      if(evento.target.id === modalID || evento.target.className == 'fechar'){
-        modal.classList.remove('mostrar');
-      }
-    });
-  }
-}
-
 const sobreNosBtn = document.querySelector('#sobreNosBtn');
 sobreNosBtn.addEventListener('click', () => {
   iniciarModal('modal-sobreNos');
+});
+
+
+const lupaMobile = document.querySelector('.lupa-pesquisa-mobile');
+lupaMobile.addEventListener('click', () => {
+  function aparecendoAposClick(className){
+    let barraPesquisa = document.querySelector('.barra-pesquisa-mobile');
+    barraPesquisa.classList.toggle('barra-ativada');
+  }
+  aparecendoAposClick('barra-pesquisa-mobile')
 })
 
-
-
-
-
-
-
-
-
-
-
-//Negocio de hora, nada a ver com o site atual;
-// const data = new Date();
-// const hora = data.getHours();
-// const teste = document.querySelector('.teste');
-
-// teste.innerHTML=`${hora}`;
