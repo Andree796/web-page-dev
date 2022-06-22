@@ -3,6 +3,7 @@ function iniciarModal(modalID){
   if(modal){
     modal.classList.add('mostrar');
     modal.addEventListener('click', (evento) => {
+      console.log(evento.target);
       if(evento.target.id === modalID || evento.target.className == 'fechar'){
         modal.classList.remove('mostrar');
       }
@@ -59,13 +60,19 @@ sobreNosBtn.addEventListener('click', () => {
   iniciarModal('modal-sobreNos');
 });
 
-
-const lupaMobile = document.querySelector('.lupa-pesquisa-mobile');
-lupaMobile.addEventListener('click', () => {
-  function aparecendoAposClick(className){
-    let barraPesquisa = document.querySelector('.barra-pesquisa-mobile');
-    barraPesquisa.classList.toggle('barra-ativada');
+const container = document.body;
+container.addEventListener('click', (evento) => {
+  console.log(evento.target);
+  const lupaMobile = document.querySelector('#lupa-pesquisa-mobile');
+  if(lupaMobile){
+    const barra = document.querySelector('.barra-pesquisa-mobile');
+    barra.classList.toggle('barra-ativada');
+    if(evento.target.id != 'lupa-pesquisa-mobile'){
+      barra.classList.remove('barra-ativada');
+      if(evento.target.id == 'barra-pesquisa-mobile'){
+        barra.classList.add('barra-ativada');
+      }
+    }
   }
-  aparecendoAposClick('barra-pesquisa-mobile')
-})
+});
 
