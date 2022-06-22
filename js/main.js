@@ -62,7 +62,7 @@ sobreNosBtn.addEventListener('click', () => {
 
 const container = document.body;
 container.addEventListener('click', (evento) => {
-  console.log(evento.target);
+  //console.log(evento.target);
   const lupaMobile = document.querySelector('#lupa-pesquisa-mobile');
   if(lupaMobile){
     const barra = document.querySelector('.barra-pesquisa-mobile');
