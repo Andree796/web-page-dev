@@ -155,6 +155,7 @@ a:hover, .titulo-cabecalho:hover{
 
 .texto-wallpaper{
   color: white;
+  text-align: justify;
   margin-bottom: 14px;
 }
 
@@ -203,7 +204,6 @@ a:hover, .titulo-cabecalho:hover{
   grid-template-columns: 250px 85px 1fr 85px 250px;
   display: grid;
   text-align: center;
-
 }
 
 .textos-principais-primarios{
@@ -223,6 +223,10 @@ a:hover, .titulo-cabecalho:hover{
   margin-top: 15px;
   text-align: none;
   color: #000000;
+}
+
+.textos .texto{
+  text-align: justify;
 }
 
 .tres-imagens{
@@ -278,6 +282,7 @@ a:hover, .titulo-cabecalho:hover{
   display: flex;
   color: black;
   margin-top: 15px;
+  text-align: justify;
   justify-content: center;
 }
 
@@ -356,8 +361,83 @@ a:hover, .titulo-cabecalho:hover{
   border: 1px solid #FFA500;
 }
 
+.textos-equipe{
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.titulo-equipe{
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+}
+
+.texto-equipe{
+  text-align: justify;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  color: black;
+}
+
+.container-equipe{
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  column-gap: 25PX;
+  padding-bottom: 75px;
+}
+
+.funcionario-primario{
+  padding: 10px;
+  box-shadow:  2px 2px 5px;
+  background-color:#1F4690;
+} 
+
+.funcionario-primario-dark{
+  padding: 10px;
+  box-shadow: 2px 2px 5px;
+  background-color: #0c0c0c;
+}
+
+.foto-funcionario{
+  background-size: contain;
+  display: inline-block;
+  width: 160px;
+}
+
+.nome-funcionario{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.descricao-funcionario{
+  width: 160px;
+  text-align: justify;
+  padding: 2px;
+  color: #FFE5B4;
+}
+
+.titulo-nome{
+  font-weight: 700;
+  text-align: center;
+  color: #FFE5B4;
+  margin-top: 5px;
+}
+
 .footer-bg{
-  background-color: #d8d8d8;
+  background-color: #1F4690;
+  /* background-color: #d8d8d8; */
+  text-align: center;
+}
+
+.footer-bg-dark{
+  background-color: #0c0c0c;
+  /* background-color: #d8d8d8; */
   text-align: center;
 }
 
@@ -367,6 +447,16 @@ a:hover, .titulo-cabecalho:hover{
   text-transform: uppercase;
   padding: 45px;
   font-size: 14px;
+  color: #FFE5B4;
+}
+
+.titulo-footer-dark{
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 45px;
+  font-size: 14px;
+  color: #FFE5B4;
 }
 
 @keyframes modal-conteudo{
@@ -441,11 +531,37 @@ a:hover, .titulo-cabecalho:hover{
   position: relative;
 }
 
-
 @media (max-width: 1080px){
   .container-cabecalho{
     display: flex;
     justify-content: space-between;
+  }
+  .container-dark{
+    background-color: #0c0c0c;
+    display: flex;
+    border-bottom: 50px #0c0c0c solid;
+  }
+  .conteudo-principal-primario-dark{
+    background-color: #FFE5B4;
+    color: black;
+    display: flex;
+    text-align: center;
+  }
+  .conteudo-principal-secundario-dark{
+    display: flex;
+    background-color: #FFE5B4;
+  }
+  .conteudo-principal-final-escuro{
+    display: flex;
+    justify-content: center;
+    background-color: #0c0c0c;
+    margin-top: 29px;
+  }
+  .titulo-dispositivos{
+    margin-top: 1rem;
+  }
+  .barra-texto-escuro::before{
+    content: none;
   }
   .barra-pesquisa{
     display: none;
@@ -558,5 +674,21 @@ a:hover, .titulo-cabecalho:hover{
   }
   .botao-secFinal{
     margin-top: 2px;
+  }
+  .textos-equipe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .titulo-equipe{
+    text-align: center;
+    font-size: 18px;
+  }
+  .texto-equipe{
+    padding: 0 15px;
+  }
+  .container-equipe{
+    flex-wrap: wrap;
+    row-gap: 25px;
   }
 }

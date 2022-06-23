@@ -21,9 +21,14 @@ btn1.addEventListener('click', () => {
   const corpo = document.querySelector('#corpoDark');
   const barraTexto = document.querySelector('#barraTexto');
   const containerFinal = document.querySelector('#containerFinal');
+  const funcionarioContainer = document.querySelectorAll('#funcionario');
+  const rodape  = document.querySelector('#rodape');
+  const tituloRodape = document.querySelector('#tituloRodape');
+
+
+
 
   function darkMode(){
-
     corpo.classList.toggle('corpoDark');
     corpo.classList.toggle('corpo');
 
@@ -45,6 +50,13 @@ btn1.addEventListener('click', () => {
     containerFinal.classList.toggle('conteudo-principal-final-escuro');
     containerFinal.classList.toggle('conteudo-principal-final');
 
+    funcionarioContainer.forEach((item)  => {
+      item.classList.toggle('funcionario-primario-dark');
+    });
+
+    rodape.classList.toggle('footer-bg-dark');
+
+    tituloRodape.classList.toggle('titulo-footer-dark');
 
     if(corpo.classList.contains('corpoDark') || cabecalho.classList.contains('cabecalho-dark') || containerWallpaper.classList.contains('container-dark') ||conteudoPrimario.classList.contains('conteudo-principal-primario-dark' || conteudoSecundario.contains('conteudo-principal-secundario-dark') || barraTexto.classList.contains('barra-texto-escuro') || containerFinal.classList.contains('conteudo-principal-final-escuro'))){
       btnThemeEscuro.innerHTML='Modo claro';
