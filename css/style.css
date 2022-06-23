@@ -325,8 +325,9 @@ a:hover, .titulo-cabecalho:hover{
 .textos-finais{
   grid-column: 3 / 4;
   text-align: center;
-  height: 110px;
+  /* height: 110px; */
   display: flex;
+  padding: 25px;
   flex-direction: column;
 }
 
@@ -334,7 +335,7 @@ a:hover, .titulo-cabecalho:hover{
   font-weight: 700;
   color: #FFE5B4;
   text-transform: uppercase;
-  padding-top: 24px;
+  /* padding-top: 24px; */
   /* margin-top: 25px; */
   /* margin-bottom: 15px; */
 }
@@ -355,8 +356,18 @@ a:hover, .titulo-cabecalho:hover{
   border: 1px solid #FFA500;
 }
 
+.footer-bg{
+  background-color: #d8d8d8;
+  text-align: center;
+}
 
-
+.titulo-footer{
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 45px;
+  font-size: 14px;
+}
 
 @keyframes modal-conteudo{
   from {
@@ -473,8 +484,16 @@ a:hover, .titulo-cabecalho:hover{
   .image-wallpaper img{
     display: none;
   }
-  .titulo-wallpaper, .texto-wallpaper{
+  .texto-wallpaper{
+    text-align: justify;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .titulo-wallpaper{
+    font-size: 20px;
     text-align: center;
+    margin-bottom: 20px;
   }
   .botoes{
     justify-content: center;
@@ -505,14 +524,27 @@ a:hover, .titulo-cabecalho:hover{
     justify-content: center;
   }
   .text-mobile{
-    text-align: center;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .barra-texto::before{
     content: none;
   }
+  .titulo-principal{
+    font-size: 18px;
+  }
+  .texto{
+    font-size: 14px;
+    display: flex;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .conteudo-principal-final{
     display: flex;
     justify-content: center;
+    padding: 15px;
   }
   .textos-finais{
     display: flex;
@@ -522,7 +554,7 @@ a:hover, .titulo-cabecalho:hover{
   }
   .titulo-final{
     text-align: center;
-    padding-top: 10px;
+    padding-top: 0;
   }
   .botao-secFinal{
     margin-top: 2px;
