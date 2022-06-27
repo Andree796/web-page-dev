@@ -155,3 +155,21 @@ btnMobileTema.addEventListener('click', () => {
   }
   darkMode();
 });
+
+
+const sobreNosBtnMobile = document.querySelector('#sobreNosMobile');
+function sobreNosModalMobile(modalID){
+  const modal = document.querySelector('#modalSobreNosMobile');
+  if(modal){
+    modal.classList.add('mostrar');
+    modal.addEventListener('click', (evento) => {
+      if(evento.target.id === modalID || evento.target.className == 'fechar'){
+        modal.classList.remove('mostrar');
+      }
+    })
+  }
+}
+
+sobreNosBtnMobile.addEventListener('click', () => {
+  sobreNosModalMobile('modalSobreNosMobile');
+});

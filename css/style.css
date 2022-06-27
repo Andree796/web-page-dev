@@ -547,7 +547,7 @@ a:hover, .titulo-cabecalho:hover{
 
 
 @media (max-width: 1080px){
-  .modal-container.mostrar{
+  .modal-container-mobile.mostrar{
     display: flex;
   }
   .modal-conteudo {
@@ -559,7 +559,7 @@ a:hover, .titulo-cabecalho:hover{
     box-shadow: 0 0 0 10px #ffe5b4;
     position: relative;
 }
-  .modal-container{
+  .modal-container-mobile{
     width: 100%;
     height: 100vh;
     position: fixed;
