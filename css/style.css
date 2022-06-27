@@ -584,7 +584,7 @@ a:hover, .titulo-cabecalho:hover{
   .menuCabecalho{
     display: block;
     /* display: block; */
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     top: 60px;
     right: 0px;
@@ -598,7 +598,7 @@ a:hover, .titulo-cabecalho:hover{
   .menuCabecalho-dark{
     display: block;
     /* display: block; */
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     top: 60px;
     right: 0px;
