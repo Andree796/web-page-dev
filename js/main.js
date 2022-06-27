@@ -100,9 +100,7 @@ btnMobile.addEventListener('click', () => {
   toggleMenu()
 });
 
-
 const btnMobileTema = document.querySelector('#btnMobile');
-
 btnMobileTema.addEventListener('click', () => {
   const menuCabecalho = document.querySelector('#navMenu');
   const cabecalho = document.querySelector('#cabecalho');
@@ -117,7 +115,6 @@ btnMobileTema.addEventListener('click', () => {
   const tituloRodape = document.querySelector('#tituloRodape');
 
   function darkMode(){
-
     menuCabecalho.classList.toggle('menuCabecalho-dark');
     menuCabecalho.classList.toggle('menuCabecalho');
 
@@ -151,9 +148,9 @@ btnMobileTema.addEventListener('click', () => {
     tituloRodape.classList.toggle('titulo-footer-dark');
 
     if(corpo.classList.contains('corpoDark') || cabecalho.classList.contains('cabecalho-dark') || containerWallpaper.classList.contains('container-dark') ||conteudoPrimario.classList.contains('conteudo-principal-primario-dark' || conteudoSecundario.contains('conteudo-principal-secundario-dark') || barraTexto.classList.contains('barra-texto-escuro') || containerFinal.classList.contains('conteudo-principal-final-escuro'))){
-      btnThemeEscuro.innerHTML='Modo claro';
+      btnMobileTema.innerHTML='Modo claro';
     }else{
-      btnThemeEscuro.innerHTML='Modo escuro';
+      btnMobileTema.innerHTML='Modo escuro';
     }
   }
   darkMode();

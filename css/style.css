@@ -35,11 +35,12 @@ body{
 
 .cabecalho{
   background-color: #1F4690;
-  padding: 12px;
+  /* padding: 12px; */
 }
 
 .container-cabecalho{
   display: grid;
+  padding: 12px;
   grid-template-columns: 238px 85px 1fr 85px 238px
 }
 
