@@ -18,7 +18,7 @@ body{
 
 .cabecalho-dark{
   background-color: #0c0c0c;
-  padding: 12px;
+  /* padding: 12px; */
 }
 
 .container-dark{
@@ -578,6 +578,7 @@ a:hover, .titulo-cabecalho:hover{
     display: block;
     color: black;;
     cursor: pointer;
+    color: #FFE5B4;
   }
   .menuCabecalho{
     display: block;
@@ -621,11 +622,6 @@ a:hover, .titulo-cabecalho:hover{
   }
   .link-clicavel{
     text-decoration: none;
-    /* color: #FFE5B4; */
-    color: black;
-  }
-  .link-clicavel-dark{
-    text-decoration: none;
     color: #FFE5B4;
     /* color: black; */
   }
@@ -667,7 +663,8 @@ a:hover, .titulo-cabecalho:hover{
   .barra-pesquisa-mobile{
     display: flex;
     border: none;
-    width: 100%;
+    font-size: 12px;
+    padding: 0 15px;
   }
   .barra-ativada{
     top: 45px;
@@ -799,8 +796,14 @@ a:hover, .titulo-cabecalho:hover{
   }
   .aba-pesquisa-mobile{
     padding: 1rem 0;
-    border: solid 1px #FFE5B4;
+    /* border: solid 1px #FFE5B4; */
     display: flex;
     padding: 2px;
+  }
+  .cor-amarela{
+    color: #FFE5B4;
+  }
+  .cor-preta{
+    color: #000000;
   }
 }
