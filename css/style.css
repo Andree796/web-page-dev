@@ -611,7 +611,8 @@ a:hover, .titulo-cabecalho:hover{
   }
   .nav-ativada{
     /* display: block; */
-    height: calc(100vh - 200px);
+    /* height: calc(100vh - 200px); */
+    height: 310px;
     visibility: visible;
     overflow-y: auto;
   }
