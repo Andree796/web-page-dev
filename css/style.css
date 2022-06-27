@@ -667,9 +667,7 @@ a:hover, .titulo-cabecalho:hover{
   .barra-pesquisa-mobile{
     display: flex;
     border: none;
-    /* position: absolute;
-    top: -1000px;
-    right: 21em; */
+    width: 100%;
   }
   .barra-ativada{
     top: 45px;
@@ -800,13 +798,9 @@ a:hover, .titulo-cabecalho:hover{
     padding-bottom: 0;
   }
   .aba-pesquisa-mobile{
-    display: flex;
     padding: 1rem 0;
-    /* margin: 0 1rem; */
     border: solid 1px #FFE5B4;
     display: flex;
     padding: 2px;
-    /* margin-top: 12px; */
-    width: 212px;
   }
 }
